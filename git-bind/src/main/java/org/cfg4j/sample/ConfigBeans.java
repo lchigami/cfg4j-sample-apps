@@ -32,10 +32,10 @@ import java.util.concurrent.TimeUnit;
 @Configuration
 public class ConfigBeans {
 
-  @Value("${configRepoPath:https://github.com/cfg4j/cfg4j-git-sample-config.git}")
+  @Value("${configRepoPath:https://github.com/lchigami/cfg4j-git-sample-config.git}")
   private String configRepoPath; // Run with -DconfigRepoPath=<repositoryUrl> parameter to override
 
-  @Value("${configBranch:production-env}")
+  @Value("${configBranch:master}")
   private String branch; // Run with -DconfigBranch=<branchName> parameter to override
 
   @Bean
